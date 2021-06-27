@@ -1,0 +1,97 @@
+*,
+*:after,
+*:before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding: 20px 10px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  height: max-content;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 35px;
+  background-color: #f5f9f5;
+  border-radius: 8px;
+  border: 1px solid #d3d3d3;
+}
+
+.card-img-container {
+  object-fit: cover;
+  width: 200px;
+  height: 100%;
+  border: 1px solid #d3d3d399;
+  display: inline-block;
+}
+
+.card-img-container:hover {
+  cursor: pointer;
+  transform: scaleX(1.1);
+}
+
+.product-name {
+  word-wrap: break-word;
+}
+
+.brand-name {
+  color: #808080;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.inputs-wrapper {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.radio-wrapper {
+  display: flex;
+  min-width: 220px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexed {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+.clear-btn {
+  background-color: #2874f0;
+  padding: 5px 10px;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #2551b8;
+}
